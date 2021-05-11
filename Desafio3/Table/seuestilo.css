@@ -1,0 +1,15 @@
+table {
+    border: 2.8px;
+}
+
+table tr td.preto {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+}
+
+table tr td.branco {
+    width: 70px;
+    height: 70px;
+    background-color: #bfbfbf;
+}
