@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "desafio7": {
+    "Desafio7": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/desafio7",
+            "outputPath": "dist/Desafio7",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,6 +58,7 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/chart.js/dist/chart.js"
             ]
           },
           "configurations": {
@@ -97,10 +98,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "desafio7:build:production"
+              "browserTarget": "Desafio7:build:production"
             },
             "development": {
-              "browserTarget": "desafio7:build:development"
+              "browserTarget": "Desafio7:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -108,7 +109,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "desafio7:build"
+            "browserTarget": "Desafio7:build"
           }
         },
         "test": {
@@ -131,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "desafio7"
+  "defaultProject": "Desafio7"
 }
