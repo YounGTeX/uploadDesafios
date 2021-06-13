@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
 	max-width: 100%;
 	margin: 0 auto;
@@ -60,4 +61,64 @@ nav img {
 	body div img{
 		display: none;
 	}
+=======
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #000;
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: 4%;
+}
+
+.menuheader {
+	margin-right: 4%;
+}
+
+.menuheader a{
+	text-decoration: none;
+	color: black;
+}
+
+.menu600px{
+	list-style: none;
+	padding: 2%;
+}
+
+.menu600px a{
+	text-decoration: none;
+	color: black;
+}
+
+.container600px {
+	margin-top: 2%;
+	border: 1px solid #000;
+	width: 17%;
+	margin-left: auto;
+	text-align: center;
+	display: none;
+}
+
+nav img {
+	display: none;
+	cursor: pointer;
+}
+
+@media(max-width: 600px){
+	nav img {
+		display: block;
+		margin-left: 5%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-right: 2%;
+	}
+
+	.menuheader {
+		display: none;
+		position: static;
+	}
+>>>>>>> ecf9548d6d91e7aab30ca5a2f07d87411ac32cd3
 }

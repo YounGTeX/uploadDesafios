@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -40,3 +41,47 @@
         </div>
     </header>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex box</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="seuestilo.css" type="text/css" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
+    </head>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("img").click(function () {
+                $(".container600px").slideToggle();
+            });
+        });
+        $(window).resize(function () {
+            if ($(document).innerWidth() > 600) {
+                $(".container600px").css("display", "none");
+            }
+        });
+    </script>  
+    <header>
+        <nav class="container">
+            <p class="logo"><a href="#">Your logo</a></p>
+            <p class="menuheader"><a href="#">Menu 1</a></p>
+            <p class="menuheader"><a href="#">Menu 2</a></p>
+            <p class="menuheader"><a href="#">Menu 3</a></p>
+            <p class="menuheader"><a href="#">Menu 4</a></p>
+            <img src="https://img.icons8.com/android/24/000000/menu.png">
+        </nav>
+        <div class="container600px">
+            <p class="menu600px"><a href="#">Menu 1</a></p>
+            <p class="menu600px"><a href="#">Menu 2</a></p>
+            <p class="menu600px"><a href="#">Menu 3</a></p>
+            <p class="menu600px"><a href="#">Menu 4</a></p>
+        </div>
+    </header>
+</html>
+>>>>>>> ecf9548d6d91e7aab30ca5a2f07d87411ac32cd3
