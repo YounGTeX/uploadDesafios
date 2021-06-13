@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Desafio7';
+
+  public toggle: boolean = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+   if(event.target.innerWidth > 600){
+      this.toggle = false;
+   }
+  }
+
 }
+
+
+

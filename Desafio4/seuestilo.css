@@ -43,7 +43,6 @@ nav img {
 	cursor: pointer;
 }
 
-
 @media(max-width: 600px){
 	nav img {
 		display: block;
@@ -61,8 +60,4 @@ nav img {
 	body div img{
 		display: none;
 	}
-
-    .container600px{
-        display: block;
-    }
 }

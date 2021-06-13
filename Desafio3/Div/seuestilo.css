@@ -1,0 +1,21 @@
+
+  .linha {
+    clear: both;
+  }
+
+  
+  .linha div {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border-left: 2.8px solid #fff;
+    border-bottom: 2.8px solid #fff;
+  }
+  
+  .branco {
+    background-color: #bfbfbf;
+  }
+
+  .preto {
+      background-color: #000;
+  }

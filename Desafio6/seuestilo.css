@@ -1,0 +1,243 @@
+.container {
+    display: flex;
+}
+
+.column{
+    display: flex;
+    width: 100%;
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: 4%;
+}
+
+nav img{
+    display: none;
+    cursor: pointer;
+}
+
+ .logo a{
+    text-decoration: none;
+    color: purple;
+    font-size: 120%;
+    font-family: 'Poppins';
+}
+
+.menuheader{
+    font-family: 'Poppins';
+    margin-right: 4%;
+}
+
+.menuheader a{
+    text-decoration: none;
+    color: #7F8992;
+}
+
+.menuheadercolor {
+    font-family: 'Poppins';
+    margin-right: 4%;
+}
+
+.teste{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menuheadercolor a{
+    color: purple;
+    border: 2px solid purple;
+    border-radius: 25px;
+    text-decoration: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body .main{
+    display: grid;
+    grid-template-columns: 3fr 2fr 0.2fr;
+}
+
+aside{
+    margin-top: -10%;
+}
+
+aside .up-grid{
+    border-bottom: 1px solid #adbdca;
+    height: 28%;
+    margin-left: 30%;
+}
+
+aside .up-grid h2, p{
+    color: purple;
+    font-family: 'Poppins';
+}
+
+aside .up-grid h2{
+    font-size: 350%;
+    font-weight: normal;
+    text-align: right;
+}
+
+aside .up-grid p{
+    font-size: 65%;
+    line-height: 200%;
+    text-align: right;
+    margin-top: -10%;
+}
+
+.subject{
+    border-radius: 5px;
+    border: 1px solid #7F8992;
+    box-shadow: 0 0 1em #a1adb9;
+    margin-bottom: 8px;
+    width: 277.5px;
+}
+
+.yourname{
+    border-radius: 5px;
+    border: 1px solid #7F8992;
+    box-shadow: 0 0 1em #a1adb9;
+    margin-bottom: 8px;
+    width: 277.5px;
+}
+
+.message{
+    resize: none;
+    width: 277.5px;
+    border-radius: 5px;
+    border: 1px solid #7F8992;
+    box-shadow: 0 0 1em #a1adb9;
+    margin-bottom: 15px;
+}
+
+.button{
+    border-radius: 25px;
+    background-color: #6b017e;
+    color: white;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.button {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-position: right center;
+}
+
+.btn-1 {
+    background-image: linear-gradient(to right, #ca068f 0%, #5b0169 51%, #ca068f 100%);
+}
+
+aside .down-grid{
+    margin-left: 300px;
+    margin-top: 3%;
+}
+
+body img{
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: 100%;
+    margin-left: -20px;
+}
+
+@media(max-width: 950px){
+    aside .up-grid h2{
+        font-size: 285%;
+    }
+}
+
+@media(max-width: 600px){
+
+    nav div .column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column{
+        flex-direction: column;
+        text-align: right;
+    }
+
+    nav img {
+		display: block;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+
+	.menuheader {
+		display: none;
+		position: static;
+	}
+
+    .menuheadercolor {
+        display: none;
+    }
+
+    body div img{
+        display: none;
+    }
+
+    aside{
+        margin-top: -10%;
+    }
+    
+    body .main{
+        display: block;
+    }
+
+    aside .up-grid{
+        border-bottom: 1px solid #adbdca;
+        height: 28%;
+        margin-left: 0%;
+    }
+    
+    aside .up-grid h2, p{
+        color: purple;
+        font-family: 'Poppins';
+    }
+    
+    aside .up-grid h2{
+        font-size: 350%;
+        font-weight: normal;
+        text-align: center;
+    }
+    
+    aside .up-grid p{
+        font-size: 65%;
+        line-height: 200%;
+        text-align: center;
+        margin-top: -10%;
+    }
+
+    aside .down-grid{
+        margin-left: 0;
+        margin-top: 10px;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
