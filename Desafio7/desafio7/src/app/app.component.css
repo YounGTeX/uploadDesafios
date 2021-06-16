@@ -2,12 +2,16 @@
 	max-width: 100%;
 	margin: 0 auto;
 	display: flex;
-	border: 1px solid #000;
 }
 
 .logo{
     margin-right: auto;
     margin-left: 4%;
+}
+
+.logo a{
+	text-decoration: none;
+	color: white;
 }
 
 .menuheader {
@@ -21,45 +25,39 @@
 
 .menu600px{
 	list-style: none;
-	padding: 2%;
 }
 
 .menu600px a{
 	text-decoration: none;
-	color: black;
+	color: white;
+}
+
+button{
+	margin-bottom: 10px;
 }
 
 .container600px {
 	margin-top: 2%;
-	border: 1px solid #000;
 	width: 17%;
 	margin-left: auto;
 	text-align: center;
 	display: none;
 }
 
-nav img {
+.example-icon {
 	display: none;
 	cursor: pointer;
 }
 
 
 @media(max-width: 600px){
-	nav img {
+	.example-icon {
 		display: block;
-		margin-left: 5%;
-		margin-top: 2%;
-		margin-bottom: 2%;
-		margin-right: 2%;
 	}
 
 	.menuheader {
 		display: none;
 		position: static;
-	}
-
-	body div img{
-		display: none;
 	}
 
     .container600px{

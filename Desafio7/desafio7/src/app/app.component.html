@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <header>
-        <nav class="container">
-            <p class="logo"><a href="#">Your logo</a></p>
-            <p class="menuheader"><a href="#">Menu 1</a></p>
-            <p class="menuheader"><a href="#">Menu 2</a></p>
-            <p class="menuheader"><a href="#">Menu 3</a></p>
-            <p class="menuheader"><a href="#">Menu 4</a></p>
-            <img (click)="toggle=!toggle" class="menuicon" src="https://img.icons8.com/android/24/000000/menu.png">
-        </nav>
-          <div *ngIf="toggle" class="container600px">
-              <p class="menu600px"><a href="#">Menu 1</a></p>
-              <p class="menu600px"><a href="#">Menu 2</a></p>
-              <p class="menu600px"><a href="#">Menu 3</a></p>
-              <p class="menu600px"><a href="#">Menu 4</a></p>
-          </div>
-    </header>
-    <body>
-      <app-formulario></app-formulario>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<header>
+    <mat-toolbar color="primary" class="container">
+        <p class="logo"><a href="#"><b>YOUR</b>LOGO</a></p>
+        <button mat-raised-button class="menuheader"><a href="#">Menu 1</a></button>
+        <button mat-raised-button class="menuheader"><a href="#">Menu 2</a></button>
+        <button mat-raised-button class="menuheader"><a href="#">Menu 3</a></button>
+        <button mat-raised-button class="menuheader"><a href="#">Menu 4</a></button>
+        <button (click)="toggle=!toggle" mat-icon-button class="example-icon"
+            aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </mat-toolbar>
+    <div *ngIf="toggle" class="container600px">
+        <button color="primary" mat-raised-button class="menu600px"><a href="#">Menu 1</a></button>
+        <button color="primary" mat-raised-button class="menu600px"><a href="#">Menu 2</a></button>
+        <button color="primary" mat-raised-button class="menu600px"><a href="#">Menu 3</a></button>
+        <button color="primary" mat-raised-button class="menu600px"><a href="#">Menu 4</a></button>
+    </div>
+</header>
+
+<body>
+    <app-formulario></app-formulario>
+</body>
+
 </html>
 
 <router-outlet></router-outlet>

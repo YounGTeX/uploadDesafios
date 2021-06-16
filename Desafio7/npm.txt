@@ -7,3 +7,4 @@ npm i primeng --save
 npm i primeicons --save
 npm i chart.js --save
 npm i angular-in-memory-web-api
+npm install rxjs-compat

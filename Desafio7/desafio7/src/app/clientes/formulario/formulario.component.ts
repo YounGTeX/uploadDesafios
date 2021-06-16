@@ -28,13 +28,13 @@ export class FormularioComponent implements OnInit {
   }
 
   onSubmit() {
-
+    
     if (this.formulario.valid) {
       console.log(this.formulario.value);
       this.http.post('http://teste.com/contatc-us', JSON.stringify(this.formulario.value))
         .map(res => res)
         .subscribe(dados => console.log(dados));
-      this.formulario.reset();
+      location.reload();
     } else {
       console.log('formulario invalido');
       Object.keys(this.formulario.controls).forEach(campo => {
@@ -48,15 +48,5 @@ export class FormularioComponent implements OnInit {
   VerificaValidTouched(campo: any) {
     return !this.formulario.get(campo)?.valid && this.formulario.get(campo)?.touched;
   }
-
-  AplicaCssErro(campo: any) {
-    return {
-      'has-error': this.VerificaValidTouched(campo),
-      'has-feedback': this.VerificaValidTouched(campo)
-    }
-  }
-
-
-
 }
 

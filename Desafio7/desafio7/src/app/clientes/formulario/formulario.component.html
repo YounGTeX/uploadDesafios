@@ -1,17 +1,16 @@
-<form #f="ngForm" [formGroup]="formulario" [ngClass]="AplicaCssErro('nome')" (ngSubmit)="onSubmit()">
-    <div>
-        <label for="nome">*Nome:</label>
-        <input type="text" id="nome" formControlName="nome" />
-        <app-app-control-erro [mostrarErro]="VerificaValidTouched('nome')"></app-app-control-erro>
-    </div>
-
-    <div>
-        <label for="email">*E-mail:</label>
-        <input type="email" id="email" formControlName="email" />
-        <app-app-control-erro [mostrarErroEmail]="VerificaValidTouched('email')"></app-app-control-erro>
-    </div>
+<form class="example-form" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+        <mat-label class="label" for="nome">*Nome:</mat-label>
+        <input matInput type="text" placeholder="Your name" id="nome" formControlName="nome" />
+    </mat-form-field>
+    <app-app-control-erro [mostrarErro]="VerificaValidTouched('nome')"></app-app-control-erro>
+    <mat-form-field class="example-full-width">
+        <mat-label class="label" for="email">*E-mail:</mat-label>
+        <input matInput placeholder="Your Email" type="email" id="email" formControlName="email" />
+    </mat-form-field>
+    <app-app-control-erro class="erro" [mostrarErroEmail]="VerificaValidTouched('email')"></app-app-control-erro>
     <div class="button">
-        <button type="submit" [disabled]="!formulario.valid">Enviar</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!formulario.valid">Enviar</button>
     </div>
-    <app-form-debug [form]="formulario"></app-form-debug>
+    <!--app-form-debug [form]="formulario"></app-form-debug-->
 </form>
